@@ -1,0 +1,1039 @@
+
+<!doctype html>
+<html lang='ru'>
+  <head>
+    <title>Глобус</title>  
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' integrity='sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn' crossorigin='anonymous'><link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
+    <style>  
+    *, div, section { 
+    font-family: 'Roboto Mono', monospace; 
+     font-size: 20px;
+    box-sizing: border-box !important;
+    }
+    
+     .header {
+            background: url(./assets/bg/WIcbCMrnm2YLlJdZ20230505080822.jpg);   ; background-size: cover;
+        }
+        .sendmail  
+        {
+            background: url();   ; background-size: cover;
+            position: relative;
+            height: 760px;
+        }
+        .feedback {
+            background: url(./assets/bg/WIcbCMrnm2YLlJdZ20230505080822.jpg);   ; background-size: cover;
+            height: 100vh !important;
+            position: relative;
+        }     
+    
+    .cfn {
+        /**********************/
+        color: #fe8700;}
+        
+    .zfs {font-size: 84px !important;}    
+    .cbg {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left:0px;
+        right: 0px;
+        /**********************/
+        background: #fe870094;  
+        backdrop-filter: blur(0pxpx) brightness(1.35) ;
+        }
+    .btn-primary {
+        padding: 20px 100px;
+        margin: 0 auto;
+        display: block;
+        text-transform: uppercase;
+        background: #fe870094; 
+        border: 2px solid #fe8700;
+    }   
+    .btn-primary:hover {
+        background: #fe8700;  
+        border: 2px solid #fe8700;
+    } 
+    .font-big {
+        color: #fff!important;
+        font-size: 62px;
+        font-weight: 200;
+        padding: 50px 0px;
+        text-transform: none;
+        Letter-spacing: 2px ; 
+    } 
+    .font-medium {
+        font-size: 30px;
+        font-weight: 200;
+        Letter-spacing: 2px ; 
+    }   
+    .text-white {
+        color: #fff!important;
+        text-shadow: 0px 0px 16px #fe8700;
+    }
+    h1, h2, h3 , h4 {
+        font-weight: 900;
+        text-transform: none;
+        Letter-spacing: 2px ;
+    }
+    h5 {
+        font-weight: 1em;
+        text-transform: none;
+        Letter-spacing: 2px ;   
+    }    
+    
+    .navigation a, .navigation a:active, .navigation a:link, .navigation a:visited {font-weight: 200; color: #9e9e9e;}
+    .navigation a:hover { font-weight: 900; color: #fe8700 ;}      
+    .header {position: relative;height: 100vh !important;}    
+    
+    .navigation {
+        position: sticky;
+        top: 0;
+        z-index: 999999;
+        height: 70px;
+        padding: 15px 15px;
+        background: white;
+        text-transform: uppercase;
+        font-weight: 200;
+        box-shadow: 0px 16px 32px #fe870094; /**********************/
+    }
+    .picture-price {
+            height: 280px; /**********************/
+            width: 280px;  /**********************/
+            object-fit: cover;
+        margin: 40px auto;
+    }      
+    .picture-staff {
+            height: 280px; /**********************/
+            width: 280px;  /**********************/
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px white solid;
+        box-shadow: 16px 16px 32px #fe870094; /**********************/
+    }          
+    .picrure-partners    {
+            height: 150px; /**********************/
+            width: 150px;  /**********************/
+            object-fit: contain;
+            /* border-radius: 50%;*/
+            margin: 20px 0px;
+    }   
+    
+    .picrure-otziv {
+    height: 200px;
+    width: 200px !important;
+        object-fit: contain;
+        border-radius: 50%;
+        padding: 20px 20px;
+        position: relative;
+        left: calc(50% - 100px);
+    }    
+    
+    
+    .price-col {
+        border-radius: 20px; /**********************/
+        border: 0px white solid;
+        box-shadow: 0px 16px 32px #fe870094; /**********************/
+        /*width: min-content;*/
+        width: 80%;
+    }  
+    
+    .social {
+         
+        position: relative;
+    }   
+    .centmid-social {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+         
+        flex-wrap: nowrap;
+        align-items: center;
+    }  
+    
+   
+    
+    .centmid-feedback {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100vh !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }          
+
+      
+    .centmid-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 100vh !important;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }   
+    .clients {
+         
+        position: relative;
+        /**********************/
+        height: 100vh !important;
+        }  
+    .centmid-clients {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 100vh !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }      
+
+    .centmid-sendmail {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 700px !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }  
+        
+    .footer  {
+        position: relative;
+        /**********************/
+        /*height: 300px;*/
+        }
+    .centmid-footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /**********************/
+        height: 300px !important;
+        flex-wrap: nowrap;
+        align-items: center;
+    }         
+    
+    .actions    {
+        position: relative;
+        /**********************/
+        /*height: 300px;*/
+        }  
+     
+ .social-icons {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0;
+        flex-wrap: wrap;
+}
+.social-icons > li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.social-icons a {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column; 
+ background-color: #fe870094; 
+    width:  130px;
+    height: 130px;
+    border-radius: 50% ;
+        margin: 20px 0;
+}
+.social-icons a:hover {
+  background-color: #fe8700;
+}
+.social-icons a svg:hover {
+    fill: #FFF;
+    width:  104px;
+    height: 104px;
+    /* position: absolute;*/
+}
+ 
+ 
+.social-icons li a svg {
+    fill: #fe8700;
+    width:  104px;
+    height: 104px;
+ 
+}
+  
+  
+    #maps { height: 700px; width: 100%}
+    #map {  height: 100%; width: 100%; position: absolute;}
+    #map {  height: 100%; width: 100%; position: absolute;}
+    .bl_center {
+      position: absolute;
+        width: 400px;
+        height: 350px;
+        top: calc(50% - 175px);
+        z-index: 99;
+        background-color: #fff;
+        padding: 25px;
+        box-shadow: 0px 15px 34px 0px #928c8c;
+        /* border: 12px #e4e4ea solid; */
+        border-radius: 5px;
+        left: 50px; 
+      }
+      
+      
+    none {
+        display: none;
+       }  
+      @media screen and (max-width: 375px) {
+            .zfs {
+                font-size: 26px !important;
+            }
+            .h1, h1 {
+                font-size: 1.5rem;
+            }
+            .h2, h2 {
+            font-size: 1rem;
+            }
+             .bl_center {
+                right: -10px;
+            }
+             .br_center {
+                left: 10px;
+            }
+            
+      }
+      
+    </style>    
+    
+    
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+  
+  </head><img src='./assets/bg/WIcbCMrnm2YLlJdZ20230505080822.jpg' class='d-none'><body>
+    <section class='header'>
+        <div class='container-fluid cbg'> 
+            <div class='row'>
+                <div class='col-12'>
+                    <div class='centmid-header'>
+                        <div class='container'>
+                            <h1 class='py-5 zfs  text-white text-center'>
+                                Глобус
+                            </h1>
+                            <h4 class='text-white text-center'>
+                                
+                            </h4>
+                        </div> 
+                    </div>    
+                </div>    
+            </div>
+        </div>
+    </section>        
+      
+    <section class='about as'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12'>
+                    <h2 class='py-5  h1 cfn text-center'>Кратко о компании</h2>
+                </div>    
+                <div class='col-12'>
+                    <p class='pb-4 h5 text-center'>Сеть гипермаркетов «Глобус» — Германская сеть продуктовых гипермаркетов, магазины которой представлены в Германии (47 магазинов), Чехии (15) и России (20).
+Globus Group является одной из немногих крупных компаний в области ритейла. В состав группы входят гипермаркеты Globus и строительные гипермаркеты Baumarkt.
+Штат сотрудников Globus Group насчитывает более 46 500 сотрудников в четырех странах.
+Ассортимент каждого гипермаркета «Глобус» насчитывает более 65 000 товаров, в том числе, около 1500 наименований продукции собственных торговых марок: «Глобус», «Глобус Вита», «Ромашкин луг», «Ваш выбор». Поставщиками сети являются более 1900 зарубежных и отечественных компаний.
+</p>
+                </div>    
+            </div>
+        </div>
+    </section><section class='price pb-5 mb-5'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5   cfn text-center'>Мы подготовили для Вас предложение</h2>
+                </div> 
+                <div class='col-12 pb-4 h5 text-center'>
+                Ассортимент каждого гипермаркета «Глобус» насчитывает более 65 000 товаров, в том числе, около 1500 наименований продукции собственных торговых марок: «Глобус», «Глобус Вита», «Ромашкин луг», «Ваш выбор». Поставщиками сети являются более 1900 зарубежных и отечественных компаний.
+                </div>
+            </div>    
+               <div class='row justify-content-center'>
+                 <div  class=' justify-content-center text-center col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 d-flex align-items-stretch py-5'>
+                  <div class='card price-col'>
+                    <img src='./assets/product/xzdlw2iR1LcFgBKC20230505080822.jpg' class=' ' alt='Купи 5 и более товаров из категории товаров для животных'>
+                    <div class='card-body'>
+                      <h5 class='card-title h3'>Купи 5 и более товаров из категории товаров для животных</h5>
+                      <p class='card-text h5'>
+                      получи скидку 10%<br>
+                      </p>
+                      <p class='card-text text-center h5'>
+                      <b class='h2'>В акции участвуют любые товары, представленные в категории зоотовары</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+         
+                                  
+                
+                </div>
+            </div>
+        </div>
+    </section><section class='clients pb-5'>  
+        <div class='container-fluid cbg'>
+            <div class='centmid-clients1 container'>
+                <div class='row '>
+
+                    <div class='col-12'>
+                        <h2 class='py-5   cfn text-center'>Отзывы более 400 наших клиентов</h2>
+                    </div> 
+                    <div class='col-12'>
+                         <div class='owl-carousel clientsotzyvi'>
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_67.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Брант
+ Григорий
+ </h5>
+                    <p class='card-text h5'>Хорошее обслуживание, приятная атмосфера. Единственный небольшой минус: менеджер запутался в ассортименте и ценах. Очень рекомендую. По обслуживанию 5 из</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/woman/photo_woman_3.jpg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Янович
+ Таисия
+ </h5>
+                    <p class='card-text h5'>Посетили с дочерью в декабре 2020 года. Первое что хочу отметить - это прекрасное расположение. Прекрасный ресепшн, девушки очень услужливые))))) очень чисто и уютно. Вернёмся ещё</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_14.jpg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Эвентов
+ Никита
+ </h5>
+                    <p class='card-text h5'>Все на высоком уровне. Приятный интерьер, свет, приветливый персонал. Есть парковка. Достойное</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_32.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Манторов
+ Тарас
+ </h5>
+                    <p class='card-text h5'>отличное сочетание цена/качество/расположение, относительно не далеко метро, 20 минут на такси до центра.  из минусов - не современный телевизор в около ресепшен. в остальном все хорошо!</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/woman/photo_woman_24.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Сонина
+ Марина
+ </h5>
+                    <p class='card-text h5'>-Крайне длительное время ожидания (пт 12:00). Около 20 минут до встречи с менеджером.  Ещё год назад это было отличное и уютное место, но сейчас это обычная фирма с завышенными ценами. Очень жаль, что массовость посещения</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_60.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Цулукидзе
+ Давид
+ </h5>
+                    <p class='card-text h5'>Может повезло? Были только один раз, но встретили нас приветливо, решали свои вопросы с менеджером уже через 15 минут. Пока ждали девушка с ресепшен подходила каждые 5 минут, поэтому и чай выпили, и и всю информацию о</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/woman/photo_woman_2.jpg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Гладкова
+ Ася
+ </h5>
+                    <p class='card-text h5'>Удобное расположение. Приветливый персонал. Чисто, уютно.  Остались очень хорошие впечатления от</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_2.jpg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Сарана
+ Аркадий
+ </h5>
+                    <p class='card-text h5'>Обычно не люблю писать отзывы. Ни хорошие, ни плохие, но это тот исключительный случай, когда результат превзошёл ожидания. Честно скажу, что не думал, что посещение окажется настолько приятным. Прежде всего поразило</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_31.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Ваенга
+ Федор
+ </h5>
+                    <p class='card-text h5'>Были всей семьей три дня, близко к центру города, где находится вся необходимая инфраструктура, есть где погулять и что посмотреть. В общем</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_38.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Любов
+ Семен
+ </h5>
+                    <p class='card-text h5'>Везде чисто, все необходимое было. Нам предоставили все то, как мы и просили. Удобная услуга пользования компьютером и принтером (например, если нужно что-то напечатать). Рекомендую эту</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       
+      
+            <div class=' item card  mb-12' style='max-width: 540px;'>
+              <div class='row no-gutters'>
+                <div class='col-md-12 text-center'>
+                  <img src='assets/man/photo_man_62.jpeg' class='picrure-otziv' alt='...'>
+                </div>
+                <div class='col-md-12 px-3'>
+                  <div class='card-body'>
+                    <h5 class='card-title h3'>Гладков
+ Лев
+ </h5>
+                    <p class='card-text h5'>Даже самое хмурое утро может стать необыкновенно приятным, если посетить ваш уютный офис. А какое чудесное облако в интерьере на</p>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        
+       </div>     
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel();
+        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>    
+                </div> 
+            </div> 
+        </div>       
+    </section>  
+    <section class='sendmail'>
+        <div class='container-fluid cbg'>
+            <div class='centmid-sendmail'>
+                <div class='container'>
+                    <div class='row '><div class='col-lg-6 py-5 my-5 col-md-12 col-12'>
+                    <form method='post' action='test'>                            
+                          <div class='form-group'>
+                            <label for='exampleInputEmail1' class='text-white h5'>Адрес электронной почты</label>
+                            <input type='email' class='form-control form-control-lg' id='exampleInputEmail1' aria-describedby='emailHelp'>
+                            <small id='emailHelp' class='text-white form-text text-white'>
+                              <input type='checkbox' required > Нажимая кнопку 'Отправить' Вы даёте свое согласие на обработку введенной персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 'О персональных данных'  
+                              </small>
+                          </div>
+                          <button type='submit' class='btn btn-primary'>Подписаться</button>
+                        </form> 
+            </div>
+            <div class='col-lg-6 col-md-12 col-12 text-white h5'> 
+                <h2 class='py-5  h1 text-white text-center'>
+                    Подписка на обновления
+                </h2> 
+                    Вы можете подписаться на электронную рассылку. Каждый месяц вы будете получать актуальную информацию о наших акциях и выгодных персональных предложениях и.д.
+                    <br>
+                    Для подписки/отписки на электронную рассылку впишите ваш email в поле ниже и нажмите кнопку 'Подписаться'
+            </div></div>               
+                </div>
+            </div>  
+        </div>    
+    </section>
+    <section class='staff'>
+
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5 h1  cfn text-center'>Наши специалисты</h2>
+                </div>
+            </div>
+            <div class='row justify-content-center'>
+            <div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/woman/photo_woman_37.jpeg'><br>
+        <h3 class='py-4 cfn'>Иванникова
+ Юлиана
+</h3>
+        <p  class='h5'>Генеральный директор</p>
+        <p  class='h5'><a href='tel:+7 (983) 170-45-57
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (983) 170-45-57
+</a></p>
+        <p  class='h5'><a href='mailto:yuliana1994@mail.ru
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> yuliana1994@mail.ru
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/man/photo_man_57.jpeg'><br>
+        <h3 class='py-4 cfn'>Якубенко
+ Леонид
+</h3>
+        <p  class='h5'>Финансовый директор</p>
+        <p  class='h5'><a href='tel:+7 (979) 392-45-64
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (979) 392-45-64
+</a></p>
+        <p  class='h5'><a href='mailto:leonid6728@yandex.ru
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> leonid6728@yandex.ru
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/man/photo_man_38.jpeg'><br>
+        <h3 class='py-4 cfn'>Ивлев
+ Аркадий
+</h3>
+        <p  class='h5'>Директор по логистике</p>
+        <p  class='h5'><a href='tel:+7 (952) 669-82-47
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (952) 669-82-47
+</a></p>
+        <p  class='h5'><a href='mailto:arkadiy.ivlev@ya.ru
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> arkadiy.ivlev@ya.ru
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/man/photo_man_60.jpeg'><br>
+        <h3 class='py-4 cfn'>Кетов
+ Георгий
+</h3>
+        <p  class='h5'>Исполнительный директор</p>
+        <p  class='h5'><a href='tel:+7 (935) 721-52-15
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (935) 721-52-15
+</a></p>
+        <p  class='h5'><a href='mailto:georgiy20091960@hotmail.com
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> georgiy20091960@hotmail.com
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/woman/photo_woman_40.jpeg'><br>
+        <h3 class='py-4 cfn'>Косяк
+ Валерия
+</h3>
+        <p  class='h5'>Исполнительный директор</p>
+        <p  class='h5'><a href='tel:+7 (915) 853-17-41
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (915) 853-17-41
+</a></p>
+        <p  class='h5'><a href='mailto:valeriya19041970@hotmail.com
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> valeriya19041970@hotmail.com
+</a></p>       
+      </div><div class='col-staff pb-5 col-lg-6 col-md-6 col-12 text-center'>
+        <img class='picture-staff m-4' src='assets/woman/photo_woman_4.jpg'><br>
+        <h3 class='py-4 cfn'>Свешникова
+ Сюзанна
+</h3>
+        <p  class='h5'>Директор по персоналу</p>
+        <p  class='h5'><a href='tel:+7 (924) 200-90-26
+'><i class='fa fa-phone' aria-hidden='true'></i> +7 (924) 200-90-26
+</a></p>
+        <p  class='h5'><a href='mailto:syuzanna2695@ya.ru
+'><i class='fa fa-envelope-o' aria-hidden='true'></i> syuzanna2695@ya.ru
+</a></p>       
+      </div> 
+                
+            </div>
+        </div>
+    </section>  
+    <section class='partners pb-5'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12'>
+                    <h2 class='py-5 h1  cfn text-center'>Среди наших партнеров - лидеры рынка</h2> 
+                </div>
+                <div class='col-lg-12 col-md-12 col-12'>
+                 
+                <div id='carouselExampleControls' class='carousel slide' data-ride='carousel'>
+                  <div class='carousel-inner'>
+                    
+                    <div class='carousel-item active'>
+       
+                        <div class='row'><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/russkay_nedvozhimost.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/rosbank.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/tala.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/rosselhozbank.png' class='picrure-partners' alt='...'>
+                              </div> </div> 
+                    </div>
+                    <div class='carousel-item '>
+                        <div class='row'><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/ahill.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/cboss.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/rasputin.png' class='picrure-partners' alt='...'>
+                              </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/akella.png' class='picrure-partners' alt='...'>
+                              </div></div> 
+                    </div>
+                    <div class='carousel-item '>
+                        <div class='row'><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/irkol.png' class='picrure-partners' alt='...'>
+                        </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/columbia_sportswear.png' class='picrure-partners' alt='...'>
+                        </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/hafei.png' class='picrure-partners' alt='...'>
+                        </div><div class='col-lg-3 col-md-6 col-12 text-center'>
+                                <img src='assets/logo/cboss.png' class='picrure-partners' alt='...'>
+                        </div> </div> 
+                </div>                
+            </div>
+                  <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'>
+                    <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Предыдущий</span>
+                  </a>
+                  <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'>
+                    <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                    <span class='sr-only'>Следующий</span>
+                  </a>
+                </div>                    
+                </div>              
+            </div>
+        </div>          
+    </section> 
+     
+
+    <section class='map'>
+          <div class='container-fluid  '>
+               <div class='row '>
+                    <div class='col-12'>
+                        <h2 class='py-5  h1 cfn text-center'>
+                        Время работы и карта проезда</h2>
+                    </div>
+                    <div class='col-12'>
+                        <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
+            <!-- Создаём контейнер для карты -->
+            <div id='maps' class='bl'>
+                <div id='map'>
+                    <div class='bl_center'>
+                        <div class='map_info'>
+                            <div class='py-2  h2 cfn'>Контакты</div>
+                            <div class='list'><i class='fa fa-volume-control-phone fa-2x' aria-hidden='true'></i>
+                              <span class='b h5'><b>Телефон:</b>
+                               <a class='page-header__phone' href='tel:+74953207622'>
+                                      +7&nbsp(495)&nbsp<span class='h5 text-black'>320-76-22</span>
+                                                            </a>
+                              </span>
+                            </div>
+                            <div class='list h5'><i class='fa fa-clock-o fa-2x' aria-hidden='true'></i>
+                              <b>Звонки принимаются ежедневно:</b>
+                                      <br>
+                                      Работаем Пн-Сб 9:00-18:00<br>
+                                      Воскресенье: выходной        					
+          
+                            </div>
+                            <div class='list h5'>
+                              <i class='fa fa-map-marker fa-2x' aria-hidden='true'></i> <span class='b'><b> Москва, Земледельческий переулок, 11 
+   </b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Создаём карту -->
+
+        <script type='text/javascript'>
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map('map', { 
+                center: [55.74087630010402,37.57792412610338],
+                zoom: 17,
+                        controls: [
+                        'zoomControl', // Ползунок масштаба
+                        'rulerControl', // Линейка
+                        'routeButtonControl', // Панель маршрутизации
+                        'trafficControl', // Пробки
+                       // 'typeSelector', // Переключатель слоев карты
+                        'fullscreenControl', // Полноэкранный режим
+                    ]
+            });
+            // Все виды меток
+    // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage-docpage/
+            // Собственное изображение для метки с контентом
+          
+            var myPlacemark = new ymaps.Placemark([55.74087630010402,37.57792412610338], null, {
+	preset: 'islands#blueDotIcon'
+});
+myMap.geoObjects.add(myPlacemark);
+            
+            myMap.geoObjects.add(placemark);
+        }
+        </script>
+                    
+                    
+                </div>
+            </div>
+        </div>         
+    </section>
+
+    <section class='feedback'>
+        <div class='container-fluid cbg '>
+              <div class='centmid-feedback'>
+                <div class='container'>
+                    <div class='row '>
+    <div class='col-lg-6 col-md-12 col-12 text-white'>
+                    <h2 class='font-big'>Есть вопросы <br>напишите нам</h2>
+                    <span class='font-medium'>Мы ответим на все интересующие вас вопросы</span>
+                </div>   
+
+                <div class='py-5  col-lg-6 col-md-12 col-12'>
+                <div class='col-lg-12 col-md-12 col-12'>
+                        <form class='needs-validation' novalidate  >
+                          
+                          <div class='form-row '>
+                            <div class='col-md-12 mb-3 text-white'>
+                              <label class='h5' for='validationCustom01'>Имя</label>
+                              <input type='text' class='form-control form-control-lg ' id='validationCustom01' placeholder='Например, Иван' required>
+                              <div class='valid-feedback text-white'>
+                                Напишите свое имя!
+                              </div>
+                            </div>
+                          </div>    
+                          
+                          <div class='form-row '>    
+                            <div class='col-md-12 mb-3 text-white'>
+                              <label class='h5' for='validationCustom02'>Фамилия</label>
+                              <input type='text' class='form-control form-control-lg ' id='validationCustom02' placeholder='Петров' required>
+                              <div class='valid-feedback text-white'>
+                                Напишите свою фамилию!
+                              </div>
+                            </div>
+                          </div>
+ 
+                            <div class='form-row text-white'>
+                    <div class='col-md-12 mb-3'>
+                      <label class='h5' for='validationCustom03'  >Почта</label>
+                      <input type='text' class='form-control form-control-lg ' id='validationCustom03' required placeholder='Например, ivan.petrov@mail.ru'>
+                      <div class='invalid-feedback'>
+                        Укажите действующий город.
+                      </div>
+                    </div>
+                  </div>   
+                            <div class='form-row text-white'>
+                    <div class='col-md-12 mb-3'>
+                      <label class='h5' for='validationCustom03' class='h4'>Телефон</label>
+                      <input type='text' class='form-control form-control-lg ' id='validationCustom03' required placeholder='Например, +7(903) 123-45-67'>
+                      <div class='invalid-feedback'>
+                        Укажите номер телефона.
+                      </div>
+                    </div>
+                  </div>  
+                               
+                             
+                            
+                            
+                          
+                          <div class='form-group'>
+                            <div class='form-check'>
+                              <input class='form-check-input' type='checkbox' value='' id='invalidCheck' required>
+                              <label class='form-check-label text-white' for='invalidCheck'>
+                                Нажимая кнопку 'Отправить' Вы даёте свое согласие на обработку введенной персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 'О персональных данных'
+                              </label>
+                              <div class='invalid-feedback text-white'>
+                                Вы должны согласиться перед отправкой.
+                              </div>
+                            </div>
+                          </div>
+                          <button class='btn btn-primary ' type='submit '>Отправить форму</button>
+                        </form>
+
+                        <script>
+                        // Пример стартового JavaScript для отключения отправки форм при наличии недопустимых полей
+                        (function() {
+                          'use strict';
+                          window.addEventListener('load', function() {
+                            // Получите все формы, к которым мы хотим применить пользовательские стили проверки Bootstrap
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Зацикливайтесь на них и предотвращайте подчинение
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                              form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                  event.preventDefault();
+                                  event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                              }, false);
+                            });
+                          }, false);
+                        })();
+                        </script>
+        </div>
+                </div>
+        
+                    </div>
+                </div>
+            </div>  
+        </div>  
+    </section>    
+<section class='social'>
+    <div class='container-fluid'>
+      <div class='centmid-social'>
+            <div class='container'>
+                <div class='row '>
+                    <h2 class='py-5  h1 cfn text-center col-12'>Добавляйиесь к нам в социальных сетях </h2>
+                    <ul class='social-icons col-12'>
+
+                    
+        <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'>
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><title/><g data-name='messenger message fb facebook' id='messenger_message_fb_facebook'><path d='M16,3C8.83,3,3,8.38,3,15a11.26,11.26,0,0,0,2.17,6.63A1,1,0,1,0,6.8,20.46,9.23,9.23,0,0,1,5,15C5,9.49,9.93,5,16,5S27,9.49,27,15,22.07,25,16,25a11.92,11.92,0,0,1-3.36-.48,1,1,0,0,0-.88.16L10,26V23.92a1,1,0,0,0-2,0V28a1,1,0,0,0,.55.89,1,1,0,0,0,1-.09l3-2.23A13.66,13.66,0,0,0,16,27c7.17,0,13-5.38,13-12S23.17,3,16,3Z'/><path d='M8.45,19.89l5.35-2.67L15.59,19a2,2,0,0,0,2.82,0l6.3-6.29a1,1,0,0,0-1.16-1.6L18.2,13.78,16.41,12a2,2,0,0,0-2.82,0l-6.3,6.29A1,1,0,0,0,8,20,.93.93,0,0,0,8.45,19.89ZM15,13.41l2.29,2.3,0,0a.62.62,0,0,0,.17.11.51.51,0,0,0,.16.09l.17,0a.68.68,0,0,0,.2,0,1,1,0,0,0,.17,0,.56.56,0,0,0,.21-.06h0l.49-.24L17,17.59l-2.29-2.3,0,0a1.22,1.22,0,0,0-.19-.12.71.71,0,0,0-.15-.08l-.18,0A.65.65,0,0,0,14,15a1,1,0,0,0-.17,0,.56.56,0,0,0-.21.06h0l-.49.24Z'/></g></svg>
+                        </a></li>
+        <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'>
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><title/><g data-name='skype conference video call' id='skype_conference_video_call'><path d='M14.52,11.34a4.37,4.37,0,0,1,4.22.22,1,1,0,0,0,1.18-1.62,6.36,6.36,0,0,0-6.3-.38,3.56,3.56,0,0,0-2.15,3.17c0,2.62,2.29,3.49,3.66,4,.17.06.34.12.49.19l.43.16c1.42.55,2.28,1,2.28,2.31a1.27,1.27,0,0,1-.81,1.18A4.87,4.87,0,0,1,13,20.3,1,1,0,1,0,11.93,22a6.87,6.87,0,0,0,3.68,1,6,6,0,0,0,2.87-.67,3.27,3.27,0,0,0,1.85-2.93c0-2.8-2.23-3.66-3.56-4.17l-.39-.16-.54-.2c-1.43-.54-2.37-1-2.37-2.14A1.65,1.65,0,0,1,14.52,11.34Z'/><path d='M28.85,17.9a12.92,12.92,0,0,0-9.6-14.49,1,1,0,0,0-.5,1.94A11,11,0,0,1,27,16a10.52,10.52,0,0,1-.17,1.91.27.27,0,0,0,0,.09,1,1,0,0,0,0,.3,1.14,1.14,0,0,0,.15.36A5.92,5.92,0,0,1,28,22a6,6,0,0,1-6,6,5.92,5.92,0,0,1-3.34-1l-.11,0a1.12,1.12,0,0,0-.25-.11,1,1,0,0,0-.35,0h0A10.6,10.6,0,0,1,16,27,11,11,0,0,1,5,16a10.52,10.52,0,0,1,.17-1.91.21.21,0,0,0,0-.08,1.07,1.07,0,0,0,0-.31A1.14,1.14,0,0,0,5,13.34,5.92,5.92,0,0,1,4,10a6,6,0,0,1,6-6,5.92,5.92,0,0,1,3.34,1,1,1,0,0,0,1.12-1.66A8,8,0,0,0,3.15,14.1,12.93,12.93,0,0,0,17.9,28.85a8,8,0,0,0,11-11Z'/></g></svg>   </a></li>
+                               <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'>                     
+<?xml version='1.0' ?><svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><title/><g data-name='telegram social media network chat' id='telegram_social_media_network_chat'><path d='M28.59,4.29a2.23,2.23,0,0,0-2.27-.36L3.41,13.1a1.83,1.83,0,0,0,0,3.38l1.48.61a1,1,0,0,0,1.31-.53,1,1,0,0,0-.54-1.31L4.56,14.8l22.51-9a.22.22,0,0,1,.23,0,.24.24,0,0,1,.08.23L23.27,25.21a.4.4,0,0,1-.26.3.39.39,0,0,1-.39-.06l-8-6.24,7.83-7.91a1,1,0,0,0-1.22-1.56L9.75,16.54a1,1,0,1,0,1,1.72l4.83-2.85L13.23,17.8a2,2,0,0,0,.2,3.08l8,6.15a2.4,2.4,0,0,0,1.47.5,2.47,2.47,0,0,0,.83-.15,2.37,2.37,0,0,0,1.52-1.75L29.33,6.47A2.23,2.23,0,0,0,28.59,4.29Z'/></g></svg>                                           </a></li>
+                              <li><a class='social-icon-tg' href='#' title='' target='_blank' rel='noopener'     style='padding: 25px;'>
+ 
+<svg height='100%' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;' version='1.1' viewBox='0 0 512 512' width='100%' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:serif='http://www.serif.com/' xmlns:xlink='http://www.w3.org/1999/xlink'><path d='M373.295,307.064c-6.37,-3.188 -37.687,-18.596 -43.526,-20.724c-5.838,-2.126 -10.084,-3.187 -14.331,3.188c-4.246,6.376 -16.454,20.725 -20.17,24.976c-3.715,4.251 -7.431,4.785 -13.8,1.594c-6.37,-3.187 -26.895,-9.913 -51.225,-31.616c-18.935,-16.89 -31.72,-37.749 -35.435,-44.126c-3.716,-6.377 -0.397,-9.824 2.792,-13c2.867,-2.854 6.371,-7.44 9.555,-11.16c3.186,-3.718 4.247,-6.377 6.37,-10.626c2.123,-4.252 1.062,-7.971 -0.532,-11.159c-1.591,-3.188 -14.33,-34.542 -19.638,-47.298c-5.171,-12.419 -10.422,-10.737 -14.332,-10.934c-3.711,-0.184 -7.963,-0.223 -12.208,-0.223c-4.246,0 -11.148,1.594 -16.987,7.969c-5.838,6.377 -22.293,21.789 -22.293,53.14c0,31.355 22.824,61.642 26.009,65.894c3.185,4.252 44.916,68.59 108.816,96.181c15.196,6.564 27.062,10.483 36.312,13.418c15.259,4.849 29.145,4.165 40.121,2.524c12.238,-1.827 37.686,-15.408 42.995,-30.286c5.307,-14.882 5.307,-27.635 3.715,-30.292c-1.592,-2.657 -5.838,-4.251 -12.208,-7.44m-116.224,158.693l-0.086,0c-38.022,-0.015 -75.313,-10.23 -107.845,-29.535l-7.738,-4.592l-80.194,21.037l21.405,-78.19l-5.037,-8.017c-21.211,-33.735 -32.414,-72.726 -32.397,-112.763c0.047,-116.825 95.1,-211.87 211.976,-211.87c56.595,0.019 109.795,22.088 149.801,62.139c40.005,40.05 62.023,93.286 62.001,149.902c-0.048,116.834 -95.1,211.889 -211.886,211.889m180.332,-392.224c-48.131,-48.186 -112.138,-74.735 -180.335,-74.763c-140.514,0 -254.875,114.354 -254.932,254.911c-0.018,44.932 11.72,88.786 34.03,127.448l-36.166,132.102l135.141,-35.45c37.236,20.31 79.159,31.015 121.826,31.029l0.105,0c140.499,0 254.87,-114.366 254.928,-254.925c0.026,-68.117 -26.467,-132.166 -74.597,-180.352' id='WhatsApp-Logo'/></svg>
+                      
+                      </a></li>
+        <li><a class='social-icon-rutube'  href='#' title='' target='_blank' rel='noopener'>
+<svg fill='#000000' width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+  <path fill-rule='evenodd' d='M23,11.9972 C23,15.0688707 22.7080514,16.9571365 22.0247481,18.1281724 C21.3347709,19.3777602 20.5269977,19.7708297 18.8782989,19.8862992 C17.7148693,19.9542414 14.794638,20 12.0026667,20 C9.2044172,20 6.28275714,19.9542562 5.10860514,19.8855427 C3.47493151,19.7708031 2.66701263,19.37838 1.97791182,18.142374 C1.29279472,16.9480084 1,15.052042 1,12.0084 C1,8.94737365 1.29138368,7.06090428 1.97193166,5.86259947 C2.67010997,4.61046509 3.49111627,4.21325835 5.11100471,4.1184917 C6.23144506,4.04250638 8.99660854,4 12.0026667,4 C15.002263,4 17.766208,4.04252223 18.8782989,4.11790083 C20.5073007,4.21303163 21.3281267,4.60936303 22.020213,5.8580297 C22.7108012,7.06048454 23,8.93778123 23,11.9972 Z M20.283329,6.84963647 C19.9603324,6.26505017 19.7713697,6.17346202 18.752413,6.11391338 C17.6926261,6.04212137 14.954737,6 12.0026667,6 C9.04424331,6 6.3050775,6.04210674 5.2370951,6.1144916 C4.22844212,6.17352647 4.03674592,6.26627 3.71489655,6.84342165 C3.2475376,7.66638709 3,9.26898917 3,11.9972 C3,14.7270394 3.24886149,16.33852 3.71873501,17.1577995 C4.03565111,17.7261665 4.22600958,17.8186276 5.23703026,17.8897046 C6.34874254,17.9546989 9.24212825,18 12.0026667,18 C14.7569983,18 17.6489264,17.9546849 18.7500936,17.8904464 C19.7737637,17.8187098 19.961409,17.7274 20.2855157,17.1409953 C20.752236,16.3407623 21,14.7382734 21,12.0084 C21,9.25771396 20.7535449,7.66399511 20.283329,6.84963647 Z M10,9 L15,12 L10,15 L10,9 Z'/>
+</svg></a></li>
+        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+    <section class='footer cbg'>
+        <div class='container'>
+            <div class='row '>
+                <div class='col-12 h5 text-white text-center centmid-footer'>
+                     
+            
+                © 2023    Глобус
+                    <br>    
+                    <br>
+            Все фотографии и тексты используются для демонстрации контента. Мы не используем тексты и изображения в коммерческих целях.       
+                </div>           
+            </div>
+        </div> 
+    </section>  
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: пакет jQuery и Bootstrap (включает Popper) -->
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF' crossorigin='anonymous'></script>
+
+    <!-- Вариант 2: Отдельные JS для Popper и Bootstrap -->
+    <!--
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js' integrity='sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2' crossorigin='anonymous'></script>
+    -->
+  </body>
+</html>
+
